@@ -20,19 +20,19 @@ jobs:
 
   print_hello:
     docker:
-      - circleci/node:13.8.0
+      - image: circleci/node:13.8.0
     steps:
       - checkout
-      -run:
+      - run:
          name: "Print hello"
          command: "echo Hello"
 
   print_world:
     docker:
-      - circleci/node:13.8.0
+      - image: circleci/node:13.8.0
     steps:
       - checkout
-      -run:
+      - run:
          name: "Print world"
          command: "echo world"
          requires: print_hello
