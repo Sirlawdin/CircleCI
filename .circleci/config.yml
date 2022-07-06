@@ -17,7 +17,7 @@ jobs:
       - run:
           name: "Say hello"
           command: |
-           echo "Hello" $MY_NAME
+           echo "Hello" $MY_FIRST_NAME
   print_hello:
     docker:
       - image: circleci/node:13.8.0
